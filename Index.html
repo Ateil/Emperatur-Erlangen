@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emperatur Erlangen – Ihr Ansprechpartner</title>
+  <meta name="description" content="Offizielle Website der Emperatur Erlangen. Erfahren Sie mehr über unsere Dienstleistungen und interaktiven Angebote.">
+  <meta name="keywords" content="Emperatur, Erlangen, Dienstleistungen, Kontakt, Webflow">
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- JSON-LD für strukturierte Daten (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Emperatur Erlangen",
+    "image": "https://emperatur-erlangen.de/images/header.jpg",
+    "telephone": "+49-123-4567890",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Musterstraße 1",
+      "addressLocality": "Erlangen",
+      "postalCode": "91052",
+      "addressCountry": "DE"
+    },
+    "url": "https://emperatur-erlangen.de",
+    "description": "Offizielle Website der Emperatur Erlangen."
+  }
+  </script>
+</head>
+<body>
+  <!-- Header mit Logo, Navigation und mobilem Hamburger-Menü -->
+  <header id="mainHeader">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Emperatur Erlangen Logo"></a>
+      </div>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="#hero">Startseite</a></li>
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#services">Leistungen</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu" id="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section mit Slider -->
+  <section id="hero">
+    <div class="slider">
+      <!-- Slide 1 -->
+      <div class="slide active" style="background-image: url('images/slide1.jpg');">
+        <div class="slide-content">
+          <h1>Willkommen bei Emperatur Erlangen</h1>
+          <p>Erleben Sie innovative Dienstleistungen.</p>
+          <a href="#services" class="btn">Mehr erfahren</a>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide" style="background-image: url('images/slide2.jpg');">
+        <div class="slide-content">
+          <h1>Unsere Expertise</h1>
+          <p>Qualität und Innovation vereint.</p>
+          <a href="#about" class="btn">Über uns</a>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide" style="background-image: url('images/slide3.jpg');">
+        <div class="slide-content">
+          <h1>Kontaktieren Sie uns</h1>
+          <p>Wir freuen uns auf Ihre Anfrage.</p>
+          <a href="#contact" class="btn">Kontakt</a>
+        </div>
+      </div>
+    </div>
+    <!-- Slider-Steuerung -->
+    <div class="slider-controls">
+      <button id="prevSlide">&#10094;</button>
+      <button id="nextSlide">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Über uns Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>Über uns</h2>
+      <p>Wir sind ein innovatives Team, das sich auf [Dienstleistung/Branche] spezialisiert hat. Mit modernster Technik und kreativem Ansatz bieten wir maßgeschneiderte Lösungen in Erlangen und Umgebung.</p>
+    </div>
+  </section>
+
+  <!-- Leistungen Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Unsere Leistungen</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <img src="images/service1.jpg" alt="Leistung 1">
+          <h3>Leistung 1</h3>
+          <p>Beschreibung der Leistung 1.</p>
+        </div>
+        <div class="service-item">
+          <img src="images/service2.jpg" alt="Leistung 2">
+          <h3>Leistung 2</h3>
+          <p>Beschreibung der Leistung 2.</p>
+        </div>
+        <div class="service-item">
+          <img src="images/service3.jpg" alt="Leistung 3">
+          <h3>Leistung 3</h3>
+          <p>Beschreibung der Leistung 3.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Kontaktieren Sie uns</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Nachricht</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Senden</button>
+      </form>
+      <div id="formFeedback" class="feedback"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Emperatur Erlangen – Alle Rechte vorbehalten</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
